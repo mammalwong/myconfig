@@ -1,0 +1,27 @@
+# turn on vi mode
+set show-mode-in-prompt on
+
+set keymap emacs
+"\C-e": vi-editing-mode
+
+set keymap vi-command
+"\C-\M-j": emacs-editing-mode
+
+set keymap vi-insert
+"\C-\M-j": emacs-editing-mode
+"jk": vi-movement-mode
+"kj": vi-movement-mode
+
+set editing-mode vi
+
+set completion-ignore-case on
+set completion-map-case on
+set colored-completion-prefix on
+set colored-stats on
+set visible-stats on
+set blink-matching-paren on
+
+set emacs-mode-string  \1\e[33m\2(EMS)\1\e[0m\2
+set vi-cmd-mode-string \1\e[32m\2(CMD)\1\e[0m\2
+set vi-ins-mode-string \1\e[36m\2(INS)\1\e[0m\2
+
