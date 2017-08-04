@@ -1,2 +1,15 @@
-set showmode
+set ruler showcmd showmode
+set backspace=indent,eol,start
+set colorcolumn=80
+set incsearch ignorecase smartcase hlsearch
+set number relativenumber
+set foldenable foldmethod=syntax
+set cursorline
+set scrolloff=20
+set virtualedit=block
 
+nmap s :action AceAction<CR>
+nmap <C-p> :action SearchEverywhere<CR>
+
+imap jk <Esc>
+imap kj <Esc>
