@@ -85,7 +85,7 @@ source $VIMRUNTIME/menu.vim
 nmap s <Plug>(easymotion-overwin-f2)
 
 imap jk <Esc>
-imap kj <Esc>
+" imap kj <Esc>
 
 " turn off relative number when in insert mode
 " autocmd InsertEnter * :set norelativenumber

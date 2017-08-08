@@ -12,4 +12,4 @@ nmap s :action AceAction<CR>
 nmap <C-p> :action SearchEverywhere<CR>
 
 imap jk <Esc>
-imap kj <Esc>
+" imap kj <Esc>
