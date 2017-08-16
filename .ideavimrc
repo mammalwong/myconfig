@@ -7,6 +7,7 @@ set foldenable foldmethod=syntax
 set cursorline
 set scrolloff=20
 set virtualedit=block
+set surround
 
 nmap s :action AceAction<CR>
 nmap <C-p> :action SearchEverywhere<CR>
