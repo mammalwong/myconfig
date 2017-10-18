@@ -45,6 +45,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'neoclide/vim-jsx-improve'
+Plugin 'tomlion/vim-solidity'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
