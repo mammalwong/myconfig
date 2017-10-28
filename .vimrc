@@ -51,6 +51,8 @@ Plugin 'mbbill/undotree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'yggdroot/indentline'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'idanarye/vim-vebugger'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 
@@ -134,4 +136,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+let g:vebugger_leader = '\b'
 
