@@ -46,6 +46,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mbbill/undotree'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 
@@ -107,4 +108,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
+
+let g:AutoPairsShortcutToggle = ''
 
