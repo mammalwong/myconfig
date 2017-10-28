@@ -50,6 +50,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mbbill/undotree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'yggdroot/indentline'
+Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 
@@ -128,3 +129,9 @@ let g:syntastic_cpp_checkers = ['gcc']
 let g:syntastic_python_checkers = ['pylint', 'python']
 let g:syntastic_go_checkers = ['gofmt', 'go']
 let g:syntastic_solidity_checkers = ['solc']
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
