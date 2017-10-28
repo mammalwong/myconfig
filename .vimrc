@@ -45,6 +45,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mbbill/undotree'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 
