@@ -49,6 +49,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mbbill/undotree'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tomtom/tcomment_vim'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 
