@@ -40,6 +40,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
+Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-surround'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
@@ -111,3 +112,4 @@ let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
 
 let g:AutoPairsShortcutToggle = ''
 
+let g:signify_vcs_list = ['git', 'svn']
