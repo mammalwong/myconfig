@@ -58,6 +58,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'idanarye/vim-vebugger'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
