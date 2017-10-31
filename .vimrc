@@ -14,7 +14,7 @@ set tags=./tags,tags
 set cursorline
 set ttyfast
 set splitbelow " can make the preview window split below
-set scrolloff=20
+set nowrap scrolloff=20 sidescrolloff=20 sidescroll=1
 set completeopt=menuone,longest,preview
 set virtualedit=block
 
