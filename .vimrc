@@ -135,6 +135,7 @@ let g:syntastic_cpp_checkers = ['gcc']
 let g:syntastic_python_checkers = ['pylint', 'python']
 let g:syntastic_go_checkers = ['gofmt', 'go']
 let g:syntastic_solidity_checkers = ['solc']
+let g:syntastic_rust_checkers = ['cargo', 'rustc']
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
