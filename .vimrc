@@ -103,6 +103,17 @@ nmap s <Plug>(easymotion-overwin-f2)
 imap jk <Esc>
 " imap kj <Esc>
 
+nmap <F3> :YcmCompleter GetDoc<CR>
+nmap <F12> :YcmCompleter GoTo<CR>
+nmap <S-F12> :YcmCompleter GoToReferences<CR>
+
+nmap <F4> :VBGtoggleBreakpointThisLine<CR>
+nmap <F6> :VBGcontinue<CR>
+nmap <F7> :VBGstepIn<CR>
+nmap <S-F7> :VBGstepOver<CR>
+nmap <F8> :VBGstepOut<CR>
+nmap <F9> :VBGevalWordUnderCursor<CR>
+
 " turn off relative number when in insert mode
 " autocmd InsertEnter * :set norelativenumber
 " autocmd InsertLeave * :set relativenumber
@@ -144,6 +155,4 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-let g:vebugger_leader = '\b'
 
