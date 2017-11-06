@@ -90,6 +90,7 @@ let g:easytags_dynamic_files=1
 
 color molokai_dark
 highlight ColorColumn ctermbg=yellow ctermfg=black
+highlight EndOfBuffer ctermbg=black ctermfg=black
 autocmd InsertEnter * :highlight ColorColumn ctermbg=blue
 autocmd InsertLeave * :highlight ColorColumn ctermbg=yellow
 
