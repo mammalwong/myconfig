@@ -90,7 +90,8 @@ let g:EasyMotion_smartcase=1
 let g:easytags_file='~/.vim/tags'
 let g:easytags_dynamic_files=1
 
-color molokai_dark
+"color molokai_dark
+color jellybeans
 highlight ColorColumn ctermbg=yellow ctermfg=black
 highlight EndOfBuffer ctermbg=black ctermfg=black
 autocmd InsertEnter * :highlight ColorColumn ctermbg=blue
