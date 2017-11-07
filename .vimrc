@@ -18,7 +18,6 @@ set nowrap scrolloff=20 sidescrolloff=20 sidescroll=1
 set completeopt=menuone,longest,preview
 set virtualedit=block
 set fillchars+=vert:│
-"set spell
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -40,7 +39,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'wellle/targets.vim'
-Plugin 'vim-scripts/camelcasemotion'
+Plugin 'bkad/CamelCaseMotion'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdtree-git-plugin'
@@ -85,8 +84,7 @@ set showcmd
 " following line makes the autocomplete box takes enter as selection
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-let g:EasyMotion_do_shade=0
-let g:EasyMotion_smartcase=1
+call camelcasemotion#CreateMotionMappings('<leader>')
 
 let g:easytags_file='~/.vim/tags'
 let g:easytags_dynamic_files=1
@@ -94,9 +92,9 @@ let g:easytags_dynamic_files=1
 "color molokai_dark
 color jellybeans
 highlight LineNr ctermbg=235 ctermfg=lightgray
+highlight EndOfBuffer ctermbg=233 ctermfg=233
 
 highlight ColorColumn ctermbg=yellow ctermfg=black
-highlight EndOfBuffer ctermbg=black ctermfg=black
 autocmd InsertEnter * :highlight ColorColumn ctermbg=blue
 autocmd InsertLeave * :highlight ColorColumn ctermbg=yellow
 
@@ -105,6 +103,13 @@ source $VIMRUNTIME/menu.vim
 
 " enable the acejump from easymotion as 's'
 nmap s <Plug>(easymotion-overwin-f2)
+nmap <Leader>h <Plug>(easymotion-linebackward)
+nmap <Leader>j <Plug>(easymotion-j)
+nmap <Leader>k <Plug>(easymotion-k)
+nmap <Leader>l <Plug>(easymotion-lineforward)
+let g:EasyMotion_do_shade=0
+let g:EasyMotion_smartcase=1
+let g:EasyMotion_startofline=0
 
 imap jk <Esc>
 " imap kj <Esc>
