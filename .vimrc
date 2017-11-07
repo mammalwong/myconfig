@@ -93,6 +93,8 @@ let g:easytags_dynamic_files=1
 
 "color molokai_dark
 color jellybeans
+highlight LineNr ctermbg=235 ctermfg=lightgray
+
 highlight ColorColumn ctermbg=yellow ctermfg=black
 highlight EndOfBuffer ctermbg=black ctermfg=black
 autocmd InsertEnter * :highlight ColorColumn ctermbg=blue
