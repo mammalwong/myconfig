@@ -43,6 +43,7 @@ Plugin 'wellle/targets.vim'
 Plugin 'vim-scripts/camelcasemotion'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
@@ -106,16 +107,22 @@ nmap s <Plug>(easymotion-overwin-f2)
 imap jk <Esc>
 " imap kj <Esc>
 
-nmap <F3> :YcmCompleter GetDoc<CR>
+nmap <F1> :YcmCompleter GetDoc<CR>
+nmap <F2> :YcmCompleter RefactorRename<CR>
+nmap <F11> :YcmCompleter GetType<CR>
 nmap <F12> :YcmCompleter GoTo<CR>
 nmap <S-F12> :YcmCompleter GoToReferences<CR>
 
+nmap <F3> :TagbarToggle<CR>
+
 nmap <F4> :VBGtoggleBreakpointThisLine<CR>
+nmap <S-F5> :VBGkill<CR>
 nmap <F6> :VBGcontinue<CR>
 nmap <F7> :VBGstepIn<CR>
 nmap <S-F7> :VBGstepOver<CR>
 nmap <F8> :VBGstepOut<CR>
 nmap <F9> :VBGevalWordUnderCursor<CR>
+autocmd FileType python nmap <buffer> <F5> :VBGstartPDB %:p<CR>
 
 " turn off relative number when in insert mode
 " autocmd InsertEnter * :set norelativenumber
@@ -123,6 +130,7 @@ nmap <F9> :VBGevalWordUnderCursor<CR>
 
 " show hidden files in NerdTree
 let g:NERDTreeShowHidden=1
+let g:NERDTreeMouseMode=2
 
 " turn of NerdTree if vim starts with no file to open
 autocmd VimEnter * if !argc() | NERDTree | endif
@@ -131,6 +139,11 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 " autocmd FileType * nested :call tagbar#autoopen(0)
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#hunks#enabled = 1
+let g:airline#extensions#ycm#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
 let g:airline_powerline_fonts = 1
 
 let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
@@ -159,3 +172,4 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+autocmd FileType text,html,markdown setlocal spell
