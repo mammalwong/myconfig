@@ -8,7 +8,7 @@ set colorcolumn=80
 set incsearch ignorecase smartcase hlsearch
 set number relativenumber
 set mouse=a ttymouse=xterm2
-set foldenable foldmethod=syntax
+set foldenable foldmethod=syntax foldlevelstart=4 foldcolumn=1
 set wildmenu wildmode=full
 set tags=./tags,tags
 set cursorline
