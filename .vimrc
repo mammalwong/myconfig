@@ -123,6 +123,8 @@ nmap <S-F12> :YcmCompleter GoToReferences<CR>
 
 nmap <F3> :TagbarToggle<CR>
 
+nmap <S-F11> :MinimapToggle<CR>
+
 nmap <F4> :VBGtoggleBreakpointThisLine<CR>
 nmap <S-F5> :VBGkill<CR>
 nmap <F6> :VBGcontinue<CR>
