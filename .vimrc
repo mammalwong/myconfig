@@ -8,7 +8,7 @@ set colorcolumn=80
 set incsearch ignorecase smartcase hlsearch
 set number relativenumber
 set mouse=a ttymouse=xterm2
-set foldenable foldmethod=syntax foldlevelstart=4 foldcolumn=1
+set foldenable foldmethod=syntax foldlevelstart=999 foldcolumn=1
 set wildmenu wildmode=full
 set tags=./tags,tags
 set cursorline
@@ -36,7 +36,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'wellle/targets.vim'
 Plugin 'bkad/CamelCaseMotion'
