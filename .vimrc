@@ -36,7 +36,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'wellle/targets.vim'
 Plugin 'bkad/CamelCaseMotion'
@@ -158,6 +158,7 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline_powerline_fonts = 1
 
 let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 let g:AutoPairsShortcutToggle = ''
 
