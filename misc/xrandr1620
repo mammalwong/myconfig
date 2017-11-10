@@ -1,0 +1,4 @@
+#!/bin/bash
+xrandr --output HDMI1 --primary --size 1920x1080 --scale 1.5x1.5 --panning 2880x1620+0+0 --output DP1 --size 1920x1080 --scale 1.5x1.5 --panning 2880x1620+2880+0
+xrandr --output HDMI1 --primary --size 1920x1080 --scale 1.5x1.5 --panning 2880x1620+0+0 --output DP1 --size 1920x1080 --scale 1.5x1.5 --panning 2880x1620+2880+0
+feh --bg-fill --randomize ~/.wallpaper/*
