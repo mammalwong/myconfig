@@ -61,6 +61,8 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'idanarye/vim-vebugger'
 Plugin 'ashisha/image.vim'
 Plugin 'severin-lemaignan/vim-minimap'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 Plugin 'rust-lang/rust.vim'
@@ -112,6 +114,11 @@ nmap <Leader>l <Plug>(easymotion-lineforward)
 let g:EasyMotion_do_shade=0
 let g:EasyMotion_smartcase=1
 let g:EasyMotion_startofline=0
+
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsEditSplit="vertical"
 
 imap jk <Esc>
 " imap kj <Esc>
@@ -165,7 +172,7 @@ let g:AutoPairsShortcutToggle = ''
 let g:signify_vcs_list = ['git', 'svn']
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_quiet_messages = {"type": "style"}
+let g:syntastic_quiet_messages = {"type": "style", "level": "warnings"}
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
