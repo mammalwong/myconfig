@@ -1,5 +1,5 @@
 # turn on vi mode
-set show-mode-in-prompt on
+# set show-mode-in-prompt on
 
 set keymap emacs
 "\C-e": vi-editing-mode
