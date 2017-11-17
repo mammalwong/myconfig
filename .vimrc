@@ -85,9 +85,6 @@ filetype plugin indent on    " required
 " showcmd wont work before plugins are loaded
 set showcmd
 
-" following line makes the autocomplete box takes enter as selection
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
 call camelcasemotion#CreateMotionMappings('<leader>')
 
 let g:easytags_file='~/.vim/tags'
