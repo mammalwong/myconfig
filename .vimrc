@@ -11,6 +11,7 @@ set mouse=a ttymouse=xterm2
 set foldenable foldmethod=syntax foldlevelstart=999 foldcolumn=1
 set wildmenu wildmode=full
 set tags=./tags,tags
+set cursorline
 set ttyfast
 set splitbelow " can make the preview window split below
 set nowrap scrolloff=20 sidescrolloff=20 sidescroll=1
@@ -95,8 +96,8 @@ color jellybeans
 highlight LineNr ctermbg=235 ctermfg=lightgray
 highlight EndOfBuffer ctermbg=233 ctermfg=233
 
-autocmd InsertEnter * set cursorline
-autocmd InsertLeave * set nocursorline
+autocmd InsertEnter * set cursorcolumn
+autocmd InsertLeave * set nocursorcolumn
 
 " load the emenu menu options
 source $VIMRUNTIME/menu.vim
