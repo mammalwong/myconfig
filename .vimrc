@@ -36,6 +36,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'wellle/targets.vim'
@@ -94,6 +95,7 @@ let g:easytags_dynamic_files=1
 
 "color molokai_dark
 color jellybeans
+let g:airline_theme='dark'
 highlight LineNr ctermbg=235 ctermfg=lightgray
 highlight EndOfBuffer ctermbg=233 ctermfg=233
 
@@ -154,6 +156,7 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 " auto open tagbar if the filetype is supported
 " autocmd FileType * nested :call tagbar#autoopen(0)
 
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
@@ -161,7 +164,8 @@ let g:airline#extensions#ycm#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline#extensions#default#section_truncate_width = {
+    \ 'b': 79, 'x': 60, 'y': 88, 'z': 45, 'warning': 80 }
 
 let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
@@ -171,8 +175,7 @@ let g:AutoPairsShortcutToggle = ''
 let g:signify_vcs_list = ['git', 'svn']
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_quiet_messages = {"type": "style", "level": "warnings"}
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_html_checkers = ['eslint']
