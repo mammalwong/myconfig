@@ -61,6 +61,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'idanarye/vim-vebugger'
 Plugin 'ashisha/image.vim'
 Plugin 'severin-lemaignan/vim-minimap'
+Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'tmhedberg/SimpylFold'
@@ -159,6 +160,7 @@ let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#ycm#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#virtualenv#enabled = 1
 let g:airline_powerline_fonts = 1
 
 let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
