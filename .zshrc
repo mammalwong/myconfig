@@ -98,7 +98,7 @@ RPS1=$RPS1'[%j]'
 
 export LESSOPEN="|/usr/bin/lesspipe.sh %s"
 
-export JIRA_URL='https://bpusea.atlassian.net/'
-export JIRA_NAME='Marco.KH.Wong'
-export JIRA_PREFIX='RS-';
+# export JIRA_URL='https://bpusea.atlassian.net/'
+# export JIRA_NAME='Marco.KH.Wong'
+# export JIRA_PREFIX='RS-';
 
