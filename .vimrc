@@ -19,6 +19,7 @@ set completeopt=menuone,longest,preview
 set virtualedit=block
 set fillchars+=vert:│
 set backupdir=~/.vim/backup// directory=~/.vim/swap// undodir=~/.vim/undo//
+set undofile
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -133,6 +134,8 @@ nmap <S-F12> :YcmCompleter GoToReferences<CR>
 nmap <F3> :TagbarToggle<CR>
 
 nmap <S-F11> :MinimapToggle<CR>
+
+nmap <S-F9> :UndotreeToggle<CR>
 
 nmap <F4> :VBGtoggleBreakpointThisLine<CR>
 nmap <S-F5> :VBGkill<CR>
