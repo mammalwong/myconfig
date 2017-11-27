@@ -10,7 +10,7 @@ set keymap vi-command
 set keymap vi-insert
 "\C-\M-j": emacs-editing-mode
 "jk": vi-movement-mode
-"kj": vi-movement-mode
+# "kj": vi-movement-mode
 
 set editing-mode vi
 
