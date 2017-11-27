@@ -19,6 +19,7 @@ set completeopt=menuone,longest,preview
 set virtualedit=block
 set fillchars+=vert:│
 set backupdir=~/.vim/backup// directory=~/.vim/swap// undodir=~/.vim/undo//
+set guioptions-=T
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
