@@ -102,3 +102,4 @@ export LESSOPEN="|/usr/bin/lesspipe.sh %s"
 # export JIRA_NAME='Marco.KH.Wong'
 # export JIRA_PREFIX='RS-';
 
+BULLETTRAIN_TIME_12HR=true
