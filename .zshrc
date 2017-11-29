@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux colored-man-pages command-not-found dircycle dirhistory docker docker-compose jira npm python pip tmux vi-mode virtualenv virtualenvwrapper web-search z zsh-navigation-tools zsh-syntax-highlighting)
+plugins=(git archlinux colored-man-pages command-not-found docker docker-compose jira npm python pip tmux vi-mode virtualenv virtualenvwrapper web-search z zsh-navigation-tools zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,15 +102,15 @@ export LESSOPEN="|/usr/bin/lesspipe.sh %s"
 # export JIRA_NAME='Marco.KH.Wong'
 # export JIRA_PREFIX='RS-';
 
-
-BULLETTRAIN_PROMPT_ORDER=(
-    time
-    status
-    context
-    dir
-    virtualenv
-    git
-    cmd_exec_time
-)
+BULLETTRAIN_PROMPT_ORDER=(time status context dir virtualenv git cmd_exec_time)
 BULLETTRAIN_TIME_12HR=true
 BULLETTRAIN_STATUS_EXIT_SHOW=true
+
+setopt AUTO_PUSHD
+
+bindkey "^R" history-incremental-search-backward
+bindkey "^T" znt-history-widget
+zle -N znt-cd-widget
+bindkey "^B" znt-cd-widget
+zle -N znt-kill-widget
+bindkey "^Y" znt-kill-widget
