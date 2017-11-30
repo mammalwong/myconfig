@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux colored-man-pages command-not-found docker docker-compose jira npm python pip tmux vi-mode virtualenv virtualenvwrapper web-search fasd zsh-navigation-tools zsh-syntax-highlighting)
+plugins=(git archlinux colored-man-pages command-not-found docker docker-compose jira npm python pip tmux vi-mode virtualenv virtualenvwrapper web-search fasd zsh-navigation-tools zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
