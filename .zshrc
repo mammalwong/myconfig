@@ -156,3 +156,5 @@ bindkey -M viins "^ " forward-word
 
 bindkey -M vicmd "s" zce
 zstyle ':zce:*' keys 'sadfjklewcmpgh'
+
+alias fuck='$(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
