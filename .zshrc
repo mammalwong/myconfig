@@ -1,13 +1,15 @@
+source /usr/share/zsh/share/antigen.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/marco/.oh-my-zsh
+# export ZSH=/home/marco/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
+# ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,13 +53,39 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git archlinux bgnotify colored-man-pages command-not-found
-    docker docker-compose jira npm python pip tmux vi-mode
-    virtualenv virtualenvwrapper web-search fasd thefuck
-    zsh-navigation-tools zsh-autosuggestions zsh-syntax-highlighting)
+# plugins=(
+#     git archlinux bgnotify colored-man-pages command-not-found
+#     docker docker-compose jira npm python pip tmux vi-mode
+#     virtualenv virtualenvwrapper web-search fasd thefuck
+#     zsh-navigation-tools zsh-autosuggestions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle archlinux
+antigen bundle bgnotify
+antigen bundle colored-man-pages
+antigen bundle command-not-found
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle jira
+antigen bundle npm
+antigen bundle python
+antigen bundle pip
+antigen bundle tmux
+antigen bundle vi-mode
+antigen bundle virtualenv
+antigen bundle virtualenvwrapper
+antigen bundle web-search
+antigen bundle fasd
+antigen bundle thefuck
+antigen bundle zsh-navigation-tools
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen theme caiogondim/bullet-train.zsh
+
+antigen apply
+
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
