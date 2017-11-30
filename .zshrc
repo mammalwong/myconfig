@@ -80,9 +80,10 @@ antigen bundle fasd
 antigen bundle thefuck
 antigen bundle zsh-navigation-tools
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
+antigen bundle hchbaw/zce.zsh
 antigen theme caiogondim/bullet-train.zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 
@@ -149,4 +150,9 @@ zle -N znt-kill-widget
 bindkey "^Y" znt-kill-widget
 
 bindkey -M viins "jk" vi-cmd-mode
+
+ZSH_AUTOSUGGEST_USE_ASYNC=1
 bindkey -M viins "^ " forward-word
+
+bindkey -M vicmd "s" zce
+zstyle ':zce:*' keys 'sadfjklewcmpgh'
