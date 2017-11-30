@@ -147,3 +147,6 @@ zle -N znt-cd-widget
 bindkey "^B" znt-cd-widget
 zle -N znt-kill-widget
 bindkey "^Y" znt-kill-widget
+
+bindkey -M viins "jk" vi-cmd-mode
+bindkey -M viins "^ " forward-word
