@@ -342,11 +342,6 @@ bar {
                 background #002b36
                 separator  #073642
                 statusline #93a1a1
-                focused_workspace  #ffffff #0000ff #fdf6e3
-                active_workspace   #657b83 #002b36 #fdf6e3
-                inactive_workspace #586e75 #002b36 #586e75
-                urgent_workspace   #657b83 #268bd2 #fdf6e3
-                binding_mode       #657b83 #2aa198 #fdf6e3
         }
 }
 
