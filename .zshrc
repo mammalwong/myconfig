@@ -79,6 +79,7 @@ antigen bundle web-search
 antigen bundle fasd
 antigen bundle thefuck
 antigen bundle zsh-navigation-tools
+antigen bundle mvoelske/jrnl-zsh-completion
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle hchbaw/zce.zsh
