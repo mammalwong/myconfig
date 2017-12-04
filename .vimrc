@@ -8,7 +8,7 @@ set colorcolumn=80
 set incsearch ignorecase smartcase hlsearch
 set number relativenumber
 set mouse=a ttymouse=xterm2
-set foldenable foldmethod=syntax foldlevelstart=999 foldcolumn=1
+set foldenable foldmethod=indent foldlevelstart=999 foldcolumn=1
 set wildmenu wildmode=full
 set tags=./tags,tags
 set cursorline
@@ -69,7 +69,7 @@ Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/Python-Syntax-Folding'
 Plugin 'neoclide/vim-jsx-improve'
 Plugin 'tomlion/vim-solidity'
 Plugin 'rust-lang/rust.vim'
@@ -201,3 +201,5 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 autocmd FileType text,html,markdown setlocal spell
+
+autocmd FileType python,javascript setlocal foldmethod=syntax
