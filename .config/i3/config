@@ -360,7 +360,7 @@ bindsym $mod+y sticky toggle
 # class                 border  backgr. text    indicator
 client.focused          #002b36 #0000ff #fdf6e3 #cb4b16
 client.focused_inactive #002b36 #657b83 #fdf6e3 #657b83
-client.unfocused        #002b36 #000000 #586e75 #000000
+client.unfocused        #002b36 #00141a #586e75 #000000
 client.urgent           #002b36 #268bd2 #fdf6e3 #268bd2
 client.placeholder      #002b36 #000000 #073642 #000000
 
