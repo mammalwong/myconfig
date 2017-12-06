@@ -318,3 +318,7 @@
 #    urgency = normal
 #
 # vim: ft=cfg
+
+[notifications.log]
+    summary = "*"
+    script = dunstlog.sh
