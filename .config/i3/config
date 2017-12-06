@@ -347,6 +347,7 @@ bar {
 
 focus_follows_mouse no
 focus_on_window_activation focus
+bindsym $mod+u [urgent="latest"] focus
 
 new_window pixel 3
 bindsym $mod+b border normal 3
