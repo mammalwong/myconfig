@@ -72,6 +72,7 @@ antigen bundle npm
 antigen bundle python
 antigen bundle pip
 antigen bundle tmux
+antigen bundle nmap
 antigen bundle vi-mode
 antigen bundle virtualenv
 antigen bundle virtualenvwrapper
