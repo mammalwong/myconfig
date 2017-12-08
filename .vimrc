@@ -102,6 +102,7 @@ let g:airline_theme='dark'
 highlight Normal ctermbg=NONE
 "highlight LineNr ctermbg=235 ctermfg=lightgray
 "highlight CursorLineNR ctermbg=black ctermfg=yellow
+highlight CursorLineNR ctermbg=black
 highlight EndOfBuffer ctermbg=NONE ctermfg=black
 
 autocmd InsertEnter * set cursorcolumn
