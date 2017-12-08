@@ -99,7 +99,7 @@ let g:easytags_dynamic_files=1
 color molokai_dark
 "color jellybeans
 let g:airline_theme='dark'
-highlight Normal ctermbg=NONE guibg=NONE
+highlight Normal ctermbg=NONE
 "highlight LineNr ctermbg=235 ctermfg=lightgray
 "highlight CursorLineNR ctermbg=black ctermfg=yellow
 highlight EndOfBuffer ctermbg=NONE ctermfg=black
