@@ -366,6 +366,7 @@ bindsym $mod+y sticky toggle
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+bindsym $mod+x scratchpad show
 
 bindsym $mod+colon exec i3-input
 
