@@ -369,7 +369,6 @@ bindsym $mod+colon exec i3-input
 exec --no-startup-id xrdb -merge ~/.Xresources &
 exec --no-startup-id compton --no-fading-openclose &
 exec --no-startup-id feh --bg-fill --randomize ~/.wallpaper/* &
-exec --no-startup-id dbus-launch dunst &
+exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
 exec --no-startup-id udiskie &
-
