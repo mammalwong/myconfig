@@ -112,7 +112,8 @@ autocmd InsertLeave * set nocursorcolumn
 source $VIMRUNTIME/menu.vim
 
 " enable the acejump from easymotion as 's'
-nmap s <Plug>(easymotion-overwin-w)
+nmap s <Plug>(easymotion-bd-w)
+nmap <Leader>s <Plug>(easymotion-overwin-w)
 nmap <Leader>h <Plug>(easymotion-linebackward)
 nmap <Leader>j <Plug>(easymotion-j)
 nmap <Leader>k <Plug>(easymotion-k)
