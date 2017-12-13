@@ -144,6 +144,10 @@ bindsym $mod+Shift+n focus output left
 bindsym $mod+m move workspace to output right
 bindsym $mod+Shift+m move workspace to output left
 
+# tab between workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
