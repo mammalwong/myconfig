@@ -138,7 +138,7 @@ nmap <S-F12> :YcmCompleter GoToReferences<CR>
 
 nmap <F3> :TagbarToggle<CR>
 
-nmap <S-F11> :MinimapToggle<CR>
+nmap <S-F11> :NERDTreeToggle<CR>
 
 nmap <S-F9> :UndotreeToggle<CR>
 
