@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $border_width 3
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -138,11 +139,11 @@ bindsym $mod+Shift+Ctrl+9 move container to workspace number 19
 bindsym $mod+Shift+Ctrl+0 move container to workspace number 20
 
 # move focus between outputs
-bindsym $mod+n focus output right
-bindsym $mod+Shift+n focus output left
+bindsym $mod+period focus output right
+bindsym $mod+comma focus output left
 # move workspaces between outputs
-bindsym $mod+m move workspace to output right
-bindsym $mod+Shift+m move workspace to output left
+bindsym $mod+Shift+period move workspace to output right
+bindsym $mod+Shift+comma move workspace to output left
 
 # tab between workspaces
 bindsym $mod+Tab workspace next
@@ -339,6 +340,76 @@ mode "workspace" {
 
 bindsym $mod+z mode "workspace"
 
+mode "togglemark" {
+        bindsym $mod+a mark --toggle A; border normal $border_width; mode "default"
+        bindsym $mod+b mark --toggle B; border normal $border_width; mode "default"
+        bindsym $mod+c mark --toggle C; border normal $border_width; mode "default"
+        bindsym $mod+d mark --toggle D; border normal $border_width; mode "default"
+        bindsym $mod+e mark --toggle E; border normal $border_width; mode "default"
+        bindsym $mod+f mark --toggle F; border normal $border_width; mode "default"
+        bindsym $mod+g mark --toggle G; border normal $border_width; mode "default"
+        bindsym $mod+h mark --toggle H; border normal $border_width; mode "default"
+        bindsym $mod+i mark --toggle I; border normal $border_width; mode "default"
+        bindsym $mod+j mark --toggle J; border normal $border_width; mode "default"
+        bindsym $mod+k mark --toggle K; border normal $border_width; mode "default"
+        bindsym $mod+l mark --toggle L; border normal $border_width; mode "default"
+        bindsym $mod+m mark --toggle M; border normal $border_width; mode "default"
+        bindsym $mod+n mark --toggle N; border normal $border_width; mode "default"
+        bindsym $mod+o mark --toggle O; border normal $border_width; mode "default"
+        bindsym $mod+p mark --toggle P; border normal $border_width; mode "default"
+        bindsym $mod+q mark --toggle Q; border normal $border_width; mode "default"
+        bindsym $mod+r mark --toggle R; border normal $border_width; mode "default"
+        bindsym $mod+s mark --toggle S; border normal $border_width; mode "default"
+        bindsym $mod+t mark --toggle T; border normal $border_width; mode "default"
+        bindsym $mod+u mark --toggle U; border normal $border_width; mode "default"
+        bindsym $mod+v mark --toggle V; border normal $border_width; mode "default"
+        bindsym $mod+w mark --toggle W; border normal $border_width; mode "default"
+        bindsym $mod+x mark --toggle X; border normal $border_width; mode "default"
+        bindsym $mod+y mark --toggle Y; border normal $border_width; mode "default"
+        bindsym $mod+z mark --toggle Z; border normal $border_width; mode "default"
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+m mode "togglemark"
+
+mode "focusmark" {
+        bindsym $mod+a [con_mark="A"] focus; mode "default"
+        bindsym $mod+b [con_mark="B"] focus; mode "default"
+        bindsym $mod+c [con_mark="C"] focus; mode "default"
+        bindsym $mod+d [con_mark="D"] focus; mode "default"
+        bindsym $mod+e [con_mark="E"] focus; mode "default"
+        bindsym $mod+f [con_mark="F"] focus; mode "default"
+        bindsym $mod+g [con_mark="G"] focus; mode "default"
+        bindsym $mod+h [con_mark="H"] focus; mode "default"
+        bindsym $mod+i [con_mark="I"] focus; mode "default"
+        bindsym $mod+j [con_mark="J"] focus; mode "default"
+        bindsym $mod+k [con_mark="K"] focus; mode "default"
+        bindsym $mod+l [con_mark="L"] focus; mode "default"
+        bindsym $mod+m [con_mark="M"] focus; mode "default"
+        bindsym $mod+n [con_mark="N"] focus; mode "default"
+        bindsym $mod+o [con_mark="O"] focus; mode "default"
+        bindsym $mod+p [con_mark="P"] focus; mode "default"
+        bindsym $mod+q [con_mark="Q"] focus; mode "default"
+        bindsym $mod+r [con_mark="R"] focus; mode "default"
+        bindsym $mod+s [con_mark="S"] focus; mode "default"
+        bindsym $mod+t [con_mark="T"] focus; mode "default"
+        bindsym $mod+u [con_mark="U"] focus; mode "default"
+        bindsym $mod+v [con_mark="V"] focus; mode "default"
+        bindsym $mod+w [con_mark="W"] focus; mode "default"
+        bindsym $mod+x [con_mark="X"] focus; mode "default"
+        bindsym $mod+y [con_mark="Y"] focus; mode "default"
+        bindsym $mod+z [con_mark="Z"] focus; mode "default"
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+apostrophe mode "focusmark"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -363,9 +434,9 @@ focus_follows_mouse no
 focus_on_window_activation focus
 bindsym $mod+u [urgent="latest"] focus
 
-new_window pixel 3
-bindsym $mod+b border normal 3
-bindsym $mod+Shift+b border pixel 3
+new_window pixel $border_width 
+bindsym $mod+b border normal $border_width
+bindsym $mod+Shift+b border pixel $border_width
 
 show_marks yes
 
