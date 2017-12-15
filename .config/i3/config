@@ -435,10 +435,11 @@ focus_on_window_activation focus
 bindsym $mod+u [urgent="latest"] focus
 
 new_window pixel $border_width 
+for_window [class=".*"] title_format "<u>%class</u> :: %title"
+show_marks yes
+
 bindsym $mod+b border normal $border_width
 bindsym $mod+Shift+b border pixel $border_width
-
-show_marks yes
 
 bindsym $mod+y sticky toggle
 
