@@ -179,8 +179,8 @@ let g:airline#extensions#default#section_truncate_width = {
 
 let g:ctrlp_extensions = ['quickfix', 'line', 'buffertag']
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
+let g:ctrlp_max_files=50000
+let g:ctrlp_max_depth=20
 
 let g:AutoPairsShortcutToggle = ''
 
