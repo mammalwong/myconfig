@@ -49,6 +49,7 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-surround'
@@ -202,3 +203,7 @@ au Syntax * RainbowParenthesesLoadBraces
 autocmd FileType text,html,markdown setlocal spell
 
 autocmd FileType * setlocal foldenable
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
