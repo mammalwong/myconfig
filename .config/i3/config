@@ -411,6 +411,14 @@ mode "focusmark" {
 bindsym $mod+grave mode "focusmark"
 bindsym $mod+apostrophe mode "focusmark"
 
+
+mode "passthrough" {
+        # back to normal: Shift+Esc
+        bindsym Shift+Escape mode "default"
+}
+
+bindsym $mod+Escape mode "passthrough"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
