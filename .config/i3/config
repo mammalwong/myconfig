@@ -423,7 +423,7 @@ bindsym $mod+Escape mode "passthrough"
 # finds out, if available)
 bar {
         status_command i3blocks
-        position top
+        position bottom
         colors {
                 background #002b36
                 separator  #073642
