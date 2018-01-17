@@ -416,7 +416,6 @@ bindsym $mod+apostrophe mode "focusmark"
 bar {
         status_command i3blocks
         position top
-        tray_output primary
         colors {
                 background #002b36
                 separator  #073642
@@ -453,6 +452,7 @@ bindsym $mod+BackSpace workspace back_and_forth
 
 bindsym $mod+colon exec i3-input
 
+exec --no-startup-id lxpanel
 exec --no-startup-id xrdb -merge ~/.Xresources &
 exec --no-startup-id compton --no-fading-openclose &
 exec --no-startup-id feh --bg-fill --randomize ~/.wallpaper/* &
