@@ -427,7 +427,7 @@ bar {
         colors {
                 background #002b36
                 separator  #073642
-                statusline #93a1a1
+                statusline #ffffff
         }
 }
 
