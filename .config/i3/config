@@ -444,7 +444,7 @@ force_display_urgency_hint 5000 ms
 bindsym $mod+u [urgent="latest"] focus
 
 new_window pixel $border_width 
-for_window [class=".*"] title_format "%title :: <u>%class</u>"
+for_window [class=".*"] title_format "%title :: %class"
 show_marks yes
 
 bindsym $mod+b border normal $border_width
