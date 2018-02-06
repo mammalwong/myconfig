@@ -440,7 +440,7 @@ client.placeholder      #002b36 #000000 #073642 #000000
 
 focus_follows_mouse no
 focus_on_window_activation focus
-force_display_urgency_hint 5000 ms
+force_display_urgency_hint 1000 ms
 bindsym $mod+u [urgent="latest"] focus
 
 new_window pixel $border_width 
