@@ -39,6 +39,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'w0rp/ale'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
@@ -98,7 +99,8 @@ let g:easytags_file='~/.vim/tags'
 let g:easytags_dynamic_files=1
 
 "color molokai_dark
-color jellybeans
+"color jellybeans
+color codedark
 let g:airline_theme='dark'
 highlight Normal ctermbg=NONE
 "highlight LineNr ctermbg=235 ctermfg=lightgray
